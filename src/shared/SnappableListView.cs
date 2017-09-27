@@ -1,4 +1,5 @@
 ﻿using CodeQuasar.Xamarin.Forms.Controls.Abstractions;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Xamarin.Forms;
@@ -7,11 +8,11 @@ namespace CodeQuasar.Xamarin.Forms.Controls
 {
     public class SnappableListView : View
     {
-        public static readonly BindableProperty ItemsSourceProperty = BindableProperty.Create(nameof(ItemsSource), typeof(IEnumerable<IHaveViewId>), typeof(SnappableListView), null);
+        public static readonly BindableProperty ItemsSourceProperty = BindableProperty.Create(nameof(ItemsSource), typeof(IEnumerable<IListViewItem>), typeof(SnappableListView), null);
 
-        public IEnumerable<IHaveViewId> ItemsSource
+        public IEnumerable<IListViewItem> ItemsSource
         {
-            get { return (IEnumerable<IHaveViewId>)GetValue(ItemsSourceProperty); }
+            get { return (IEnumerable<IListViewItem>)GetValue(ItemsSourceProperty); }
             set { SetValue(ItemsSourceProperty, value); }
         }
 
@@ -28,7 +29,7 @@ namespace CodeQuasar.Xamarin.Forms.Controls
         public double ItemHeight
         {
             get { return (double)GetValue(ItemHeightProperty); }
-            set { SetValue(ItemHeightProperty, value); }
+            set {  SetValue(ItemHeightProperty, value); }
         }
 
         public static readonly BindableProperty ItemWidthProperty = BindableProperty.Create(nameof(ItemWidth), typeof(double), typeof(SnappableListView), default(double));

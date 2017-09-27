@@ -3,7 +3,7 @@ using Xamarin.Forms;
 
 namespace CodeQuasar.Xamarin.Forms.Controls.Demo
 {
-    public class ImageModel : IHaveViewId
+    public class ImageModel : IListViewItem
     {
         public string Source { get; set; }
 
