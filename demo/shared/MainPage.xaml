@@ -6,17 +6,41 @@
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"   
              x:Class="CodeQuasar.Xamarin.Forms.Controls.Demo.MainPage">
 
-    <controls:SnappableListView x:Name="snappableListView" ItemPadding="10,10,10,10" ItemWidth="300" ItemHeight="300">
-        <controls:SnappableListView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
-                    <StackLayout BackgroundColor="{Binding Color}" Padding="20,5,20,5">
-                        <Image Source="{Binding Source}" HeightRequest="200" WidthRequest="120" Aspect="AspectFill" />
-                        <Label Text="{Binding Source}" Grid.Row="1" HeightRequest="30"/>
-                    </StackLayout>
-                </ViewCell>
-            </DataTemplate>
-        </controls:SnappableListView.ItemTemplate>
-    </controls:SnappableListView>
+    <Grid>
+        <ScrollView>
+            <StackLayout Orientation="Vertical">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid>
+                        <StackLayout Orientation="Vertical">
+                        <Label Text="Text 123" />
+                        <Label Text="Text 123" />
+                        <Label Text="Text 123" />
+                        <Label Text="Text 123" />
+                        <Label Text="Text 123" />
+                        <Label Text="Text 123" />
+                        <Label Text="Text 123" />
+                        <Label Text="Text 123" />
+                        </StackLayout>
+                    </Grid>
+                    <controls:SnappableListView Grid.Row="1" x:Name="snappableListView" ItemPadding="10,10,10,10" ItemWidth="300" ItemHeight="300">
+                        <controls:SnappableListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout BackgroundColor="{Binding Color}" Padding="20,5,20,5">
+                                        <Image Source="{Binding Source}" HeightRequest="200" WidthRequest="120" Aspect="AspectFill" />
+                                        <Label Text="{Binding Source}" Grid.Row="1" />
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </controls:SnappableListView.ItemTemplate>
+                    </controls:SnappableListView>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
 
 </ContentPage>

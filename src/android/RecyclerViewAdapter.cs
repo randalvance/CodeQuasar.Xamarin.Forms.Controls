@@ -50,7 +50,7 @@ namespace CodeQuasar.Xamarin.Forms.Controls.Android
         public override long GetItemId(int position)
         {
             var item = _dataSource[position];
-            var hasId = item as IHaveViewId;
+            var hasId = item as IListViewItem;
             if (item != null && hasId?.ViewId != null)
             {
                 return hasId.ViewId.Value;
