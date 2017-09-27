@@ -46,5 +46,13 @@ namespace CodeQuasar.Xamarin.Forms.Controls
             get { return (Thickness)GetValue(ItemPaddingProperty); }
             set { SetValue(ItemPaddingProperty, value); }
         }
+
+        public static readonly BindableProperty SnapModeProperty = BindableProperty.Create(nameof(SnapMode), typeof(SnapMode), typeof(SnappableListView), SnapMode.None);
+
+        public SnapMode SnapMode
+        {
+            get { return (SnapMode)GetValue(SnapModeProperty); }
+            set { SetValue(SnapModeProperty, value); }
+        }
     }
 }

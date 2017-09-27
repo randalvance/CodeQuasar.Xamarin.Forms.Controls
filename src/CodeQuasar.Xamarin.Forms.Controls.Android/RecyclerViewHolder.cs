@@ -51,12 +51,6 @@ namespace CodeQuasar.Xamarin.Forms.Controls.Android
             viewGroup.LayoutParameters = layoutParams;
             viewGroup.Layout(0, 0, width, height);
 
-            var viewId = (dataContext as IHaveViewId).ViewId;
-
-            var colors = (new Color[] { Color.Red, Color.Green, Color.Blue }).Select(c => c.ToAndroid()).ToArray();
-
-            contentLayout.SetBackgroundColor(colors[(int)viewId % 3]);
-
             contentLayout.SetPadding(
                 (int)(snappableListView.ItemPadding.Left * density),
                 (int)(snappableListView.ItemPadding.Top * density),

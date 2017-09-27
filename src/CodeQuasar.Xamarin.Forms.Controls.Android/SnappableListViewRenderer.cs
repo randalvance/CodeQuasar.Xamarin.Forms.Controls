@@ -1,6 +1,8 @@
 ﻿using Android.Support.V7.Widget;
+using Android.Views;
 using CodeQuasar.Xamarin.Forms.Controls;
 using CodeQuasar.Xamarin.Forms.Controls.Android;
+using Com.Github.Rubensousa.Gravitysnaphelper;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -44,9 +46,22 @@ namespace CodeQuasar.Xamarin.Forms.Controls.Android
                     recyclerView.SetClipToPadding(true);
                     recyclerView.SetLayoutManager(linearLayout);
 
-                    var linearSnapHelper = new LinearSnapHelper();
-                    
-                    linearSnapHelper.AttachToRecyclerView(recyclerView);
+                    SnapHelper snapHelper = null;
+
+                    switch (Element.SnapMode)
+                    {
+                        case SnapMode.Center:
+                            snapHelper = new LinearSnapHelper();
+                            break;
+                        case SnapMode.Start:
+                            snapHelper = new GravitySnapHelper((int)GravityFlags.Start);
+                            break;
+                        case SnapMode.End:
+                            snapHelper = new GravitySnapHelper((int)GravityFlags.End);
+                            break;
+                    }
+
+                    snapHelper?.AttachToRecyclerView(recyclerView);
 
                     UpdateAdapter();
                 }
