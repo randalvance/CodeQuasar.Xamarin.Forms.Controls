@@ -8,7 +8,7 @@
     <owners>Randal Vance Cunanan</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>CodeQuasar Xamarin Forms Custom Controls</description>
-    <tags>xamarin location plugin forms</tags>
+    <tags>xamarin forms controls listview snap</tags>
     <dependencies>
       <group targetFramework="portable-net45+win8+wpa81+wp8">
       </group>
