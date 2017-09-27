@@ -5,9 +5,9 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{874EA331-5734-4372-AEDC-2D88631C507C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeQuasar.Xamarin.Forms.Controls", "CodeQuasar.Xamarin.Forms.Controls\CodeQuasar.Xamarin.Forms.Controls.csproj", "{2EDA1467-700D-461C-9573-3750A461D456}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeQuasar.Xamarin.Forms.Controls", "shared\CodeQuasar.Xamarin.Forms.Controls.csproj", "{2EDA1467-700D-461C-9573-3750A461D456}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeQuasar.Xamarin.Forms.Controls.Android", "CodeQuasar.Xamarin.Forms.Controls.Android\CodeQuasar.Xamarin.Forms.Controls.Android.csproj", "{F5DF2C98-EE2D-47E8-B9DE-ACA009D7C0AB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeQuasar.Xamarin.Forms.Controls.Android", "android\CodeQuasar.Xamarin.Forms.Controls.Android.csproj", "{F5DF2C98-EE2D-47E8-B9DE-ACA009D7C0AB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeQuasar.Xamarin.Forms.Controls.Demo", "..\demo\shared\CodeQuasar.Xamarin.Forms.Controls.Demo.csproj", "{9FCBEFAC-302F-42F1-AB4E-02672049B85B}"
 EndProject

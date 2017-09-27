@@ -8,7 +8,7 @@
     <owners>Randal Vance Cunanan</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>CodeQuasar Xamarin Forms Custom Controls</description>
-    <tags>xamarin location plugin forms</tags>
+    <tags>xamarin forms controls listview snap</tags>
     <dependencies>
       <group targetFramework="portable-net45+win8+wpa81+wp8">
       </group>
@@ -20,9 +20,9 @@
   </metadata>
   <files>
     <!--Core-->
-    <file src="..\src\CodeQuasar.Xamarin.Forms.Controls\bin\Release\CodeQuasar.Xamarin.Forms.Controls.*" target="lib\portable-net45+win8+wpa81+wp8" />
+    <file src="..\src\shared\bin\Release\CodeQuasar.Xamarin.Forms.Controls.*" target="lib\portable-net45+win8+wpa81+wp8" />
 
     <!--Xamarin.Android-->
-    <file src="..\src\CodeQuasar.Xamarin.Forms.Controls.Android\bin\Release\CodeQuasar.Xamarin.Forms.Controls.*" target="lib\monoandroid" />
+    <file src="..\src\android\bin\Release\CodeQuasar.Xamarin.Forms.Controls.*" target="lib\monoandroid" />
   </files>
 </package>

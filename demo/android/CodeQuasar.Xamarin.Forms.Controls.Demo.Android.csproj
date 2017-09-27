@@ -155,11 +155,11 @@
     <AndroidResource Include="Resources\values\styles.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\CodeQuasar.Xamarin.Forms.Controls.Android\CodeQuasar.Xamarin.Forms.Controls.Android.csproj">
+    <ProjectReference Include="..\..\src\android\CodeQuasar.Xamarin.Forms.Controls.Android.csproj">
       <Project>{f5df2c98-ee2d-47e8-b9de-aca009d7c0ab}</Project>
       <Name>CodeQuasar.Xamarin.Forms.Controls.Android</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\CodeQuasar.Xamarin.Forms.Controls\CodeQuasar.Xamarin.Forms.Controls.csproj">
+    <ProjectReference Include="..\..\src\shared\CodeQuasar.Xamarin.Forms.Controls.csproj">
       <Project>{2eda1467-700d-461c-9573-3750a461d456}</Project>
       <Name>CodeQuasar.Xamarin.Forms.Controls</Name>
     </ProjectReference>

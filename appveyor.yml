@@ -4,7 +4,7 @@ branches:
   - master
   - dev
 build_script:
-  - ps: .\build.ps1 -Target Default -Configuration Release
+  - ps: .\build.ps1 -Target Build -Configuration Release
 artifacts:
 - path: ./Build/nuget/*.nupkg
   name: NuGet

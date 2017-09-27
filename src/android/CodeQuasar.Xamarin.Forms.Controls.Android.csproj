@@ -123,7 +123,7 @@
     <None Include="Resources\AboutResources.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CodeQuasar.Xamarin.Forms.Controls\CodeQuasar.Xamarin.Forms.Controls.csproj">
+    <ProjectReference Include="..\shared\CodeQuasar.Xamarin.Forms.Controls.csproj">
       <Project>{2eda1467-700d-461c-9573-3750a461d456}</Project>
       <Name>CodeQuasar.Xamarin.Forms.Controls</Name>
     </ProjectReference>

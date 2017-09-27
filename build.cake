@@ -5,14 +5,14 @@
 
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
-var version = EnvironmentVariable ("APPVEYOR_BUILD_VERSION") ?? Argument("version", "0.0.1-alpha-0001");
+var version = EnvironmentVariable ("APPVEYOR_BUILD_VERSION") ?? Argument("version", "1.0.0-alpha-0001");
 
 //////////////////////////////////////////////////////////////////////
 // PREPARATION
 //////////////////////////////////////////////////////////////////////
 
 // Define directories.
-var buildDir = Directory("./src/CodeQuasar.Xamarin.Forms.Controls/bin") + Directory(configuration);
+var buildDir = Directory("./src/shared/bin") + Directory(configuration);
 var artifactDir = Directory("./Build");
 
 //////////////////////////////////////////////////////////////////////
