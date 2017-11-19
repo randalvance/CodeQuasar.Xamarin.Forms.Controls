@@ -5,7 +5,7 @@
 
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
-var version = EnvironmentVariable ("APPVEYOR_BUILD_VERSION") ?? Argument("version", "1.0.0-alpha-0004");
+var version = EnvironmentVariable ("APPVEYOR_BUILD_VERSION") ?? Argument("version", "1.0.0-alpha-0005");
 
 //////////////////////////////////////////////////////////////////////
 // PREPARATION
