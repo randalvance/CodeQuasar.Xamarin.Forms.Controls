@@ -7,6 +7,8 @@ var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
 var version = GetVersion();
 
+Information($"Version to use is {version}");
+
 //////////////////////////////////////////////////////////////////////
 // PREPARATION
 //////////////////////////////////////////////////////////////////////
