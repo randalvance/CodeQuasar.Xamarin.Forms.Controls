@@ -17,7 +17,7 @@
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
     <AndroidStoreUncompressedFileExtensions />
     <MandroidI18n />
     <JavaMaximumHeapSize />
@@ -158,10 +158,6 @@
     <ProjectReference Include="..\..\src\android\CodeQuasar.Xamarin.Forms.Controls.Android.csproj">
       <Project>{f5df2c98-ee2d-47e8-b9de-aca009d7c0ab}</Project>
       <Name>CodeQuasar.Xamarin.Forms.Controls.Android</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\src\shared\CodeQuasar.Xamarin.Forms.Controls.csproj">
-      <Project>{2eda1467-700d-461c-9573-3750a461d456}</Project>
-      <Name>CodeQuasar.Xamarin.Forms.Controls</Name>
     </ProjectReference>
     <ProjectReference Include="..\shared\CodeQuasar.Xamarin.Forms.Controls.Demo.csproj">
       <Project>{ee921ed5-cd87-4c23-89ad-b0e179b06e06}</Project>

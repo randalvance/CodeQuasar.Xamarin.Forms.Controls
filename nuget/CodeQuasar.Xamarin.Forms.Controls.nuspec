@@ -20,7 +20,7 @@
   </metadata>
   <files>
     <!--Core-->
-    <file src="..\src\shared\bin\Release\CodeQuasar.Xamarin.Forms.Controls.*" target="lib\portable-net45+win8+wpa81+wp8" />
+    <file src="..\src\shared\bin\Release\netstandard1.0\CodeQuasar.Xamarin.Forms.Controls.*" target="lib\netstandard1.0" />
 
     <!--Xamarin.Android-->
     <file src="..\src\android\bin\Release\CodeQuasar.Xamarin.Forms.Controls.*" target="lib\monoandroid" />

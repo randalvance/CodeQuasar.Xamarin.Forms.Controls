@@ -1,4 +1,5 @@
-﻿using Android.Support.V7.Widget;
+﻿using Android.Content;
+using Android.Support.V7.Widget;
 using Android.Views;
 using CodeQuasar.Xamarin.Forms.Controls;
 using CodeQuasar.Xamarin.Forms.Controls.Android;
@@ -17,6 +18,11 @@ namespace CodeQuasar.Xamarin.Forms.Controls.Android
 {
     public class SnappableListViewRenderer : ViewRenderer<SnappableListView, RecyclerView>
     {
+        public SnappableListViewRenderer(Context context) : base(context)
+        {
+
+        }
+
         protected override void OnElementChanged(ElementChangedEventArgs<SnappableListView> e)
         {
             base.OnElementChanged(e);
