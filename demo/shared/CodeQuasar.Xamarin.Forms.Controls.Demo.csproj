@@ -55,12 +55,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\shared\CodeQuasar.Xamarin.Forms.Controls.csproj">
-      <Project>{2eda1467-700d-461c-9573-3750a461d456}</Project>
-      <Name>CodeQuasar.Xamarin.Forms.Controls</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Reference Include="FFImageLoading">
       <HintPath>..\..\src\packages\Xamarin.FFImageLoading.2.2.15\lib\portable-net45+win8+wpa81+wp8\FFImageLoading.dll</HintPath>
       <Private>True</Private>
@@ -88,6 +82,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\shared\CodeQuasar.Xamarin.Forms.Controls.csproj">
+      <Project>{2ea577e3-ad5d-46a5-b348-5eae6e91cc57}</Project>
+      <Name>CodeQuasar.Xamarin.Forms.Controls</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
