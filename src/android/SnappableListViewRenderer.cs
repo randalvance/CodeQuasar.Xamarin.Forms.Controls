@@ -46,6 +46,9 @@ namespace CodeQuasar.Xamarin.Forms.Controls.Android
                 {
                     var recyclerView = new RecyclerView(Context);
 
+                    if (!string.IsNullOrWhiteSpace(Element.AutomationId))
+                        recyclerView.Tag = Element.AutomationId;
+
                     SetNativeControl(recyclerView);
                     var linearLayout = new LinearLayoutManager(Context, OrientationHelper.Horizontal, false);
                     
