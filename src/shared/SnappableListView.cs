@@ -1,6 +1,5 @@
 ﻿using CodeQuasar.Xamarin.Forms.Controls.Abstractions;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using Xamarin.Forms;
 
@@ -8,6 +7,8 @@ namespace CodeQuasar.Xamarin.Forms.Controls
 {
     public class SnappableListView : View
     {
+        public event EventHandler<ScrollToEventArgs> ScrolledTo;
+
         public static readonly BindableProperty ItemsSourceProperty = BindableProperty.Create(nameof(ItemsSource), typeof(IEnumerable<IListViewItem>), typeof(SnappableListView), null);
 
         public IEnumerable<IListViewItem> ItemsSource
@@ -54,6 +55,11 @@ namespace CodeQuasar.Xamarin.Forms.Controls
         {
             get { return (SnapMode)GetValue(SnapModeProperty); }
             set { SetValue(SnapModeProperty, value); }
+        }
+
+        public void ScrollTo(int x, int y)
+        {
+            ScrolledTo?.Invoke(new ScrollToEventArgs() { X = x, Y = y });
         }
     }
 }

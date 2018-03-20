@@ -32,6 +32,7 @@ namespace CodeQuasar.Xamarin.Forms.Controls.Android
                 {
                     itemsSource.CollectionChanged -= ItemsSourceOnCollectionChanged;
                 }
+                Element.ScrolledTo -= OnScrolledTo;
             }
 
             if (e.NewElement != null)
@@ -86,7 +87,15 @@ namespace CodeQuasar.Xamarin.Forms.Controls.Android
                     (int)(Element.ItemPadding.Top * density),
                     (int)(Element.ItemPadding.Right * density),
                     (int)(Element.ItemPadding.Bottom * density));
+
+                Element.ScrolledTo -= OnScrolledTo;
+                Element.ScrolledTo += OnScrolledTo;
             }
+        }
+
+        private void OnScrolledTo(object sender, ScrollToEventArgs e)
+        {
+            Control.ScrollTo(e.X, e.Y);
         }
 
         private void ItemsSourceOnCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
